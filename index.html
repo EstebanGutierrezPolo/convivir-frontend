@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convivir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script>
+      // Aplica el tema guardado antes de pintar, para que no parpadee.
+      try {
+        var tema = localStorage.getItem('convivir-tema')
+        if (tema === 'light' || tema === 'dark') document.documentElement.setAttribute('data-theme', tema)
+      } catch (e) { /* sin almacenamiento */ }
+    </script>
   </head>
   <body>
     <div id="root"></div>
